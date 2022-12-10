@@ -6,11 +6,11 @@ import { Account } from './components'
 export function App() {
   const { isConnected } = useAccount()
   return (
-    <>
-      <h1>wagmi + RainbowKit + Vite</h1>
+    <div className='p-4 m-auto w-min'>
+      <h1 className='text-2xl font-bold' >wagmi + RainbowKit + Vite</h1>
 
       <ConnectButton />
       {isConnected && <Account />}
-    </>
+    </div>
   )
 }
