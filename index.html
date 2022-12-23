@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Apparently CSP can only get weaker via meta tag, this shouldn't work -->
-    <!-- <meta
+    <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self' 'unsafe-inline'; connect-src 'self' *.lanyard.org *.alchemyapi.io wss://*.ws.alchemyapi.io *.walletconnect.org; img-src 'self' 'unsafe-inline' data: https://* ipfs://* arweave://*; media-src 'self' 'unsafe-inline' data: https://* ipfs://* arweave://*"
-    /> -->
+      content="default-src 'self' 'unsafe-inline' data: blob:; connect-src 'self' https://lanyard.org/ https://arweave.net https://*.arweave.net *.alchemyapi.io wss://*.ws.alchemyapi.io *.walletconnect.org wss://*.bridge.walletconnect.org; img-src 'self' 'unsafe-inline' data: blob: https: ipfs: arweave:; media-src 'self' 'unsafe-inline' data: blob: https: ipfs: arweave:"
+    />
     <title>wagmi</title>
     <script type="module" src="./polyfills.ts"></script>
     <link href="./index.css" rel="stylesheet" />
