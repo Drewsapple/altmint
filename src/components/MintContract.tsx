@@ -149,8 +149,8 @@ export function MintContract(props: MintContractProps) {
                   <h3 className="text-lg font-bold">{`${mintData?.[0]}/${mintData?.[1]?.editionMaxMintable} Minted`}</h3>
                   <progress
                     className="progress w-full"
-                    value={mintData?.[0].toString()}
-                    max={mintData?.[1].toString()}
+                    value={mintData?.[0]?.toString()}
+                    max={mintData?.[1]?.toString()}
                   />
                 </div>
                 <button className="btn btn-primary w-fit" onClick={() => write!() }>
